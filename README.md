@@ -22,15 +22,15 @@ This pipeline uses docker image
 
 # Input parameters 
 All the inputs needed by the workflow are provided through a JSON file and can be generated using [Womtool](https://cromwell.readthedocs.io/en/stable/WOMtool/) with the following command  
-
+```
 java -jar womtool.jar inputs workflow.wdl > inputs.json
-
+```
 # Running the pipeline
 ### Locally:
 The pipeline can be run using [Cromwell](https://cromwell.readthedocs.io/en/stable/)
-
+```
 java -jar cromwell.jar run workflow.wdl -i inputs.json 
-
+```
 
 # Outputs
 This pipeline will produce a number of directories and files
