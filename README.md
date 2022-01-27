@@ -5,7 +5,7 @@ Python script to generate mapping between non-redundant gene catalogue and MAGS
 
 # Introduction to WDL workflow
 ### This pipeline will perform;
-* Pre-processing of reads with Trim Galore and Kneaddata
+* Pre-processing of reads with Kneaddata
 * Metagenomics assembly with Megahit
 * Gene prediction
 * Mapping of reads against the contigs 
