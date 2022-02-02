@@ -3,8 +3,6 @@
 
 FROM biopython/biopython
 
-COPY extract_complete_gene.py /app
-
 RUN apt-get update && apt-get install -y \
   curl \
   git \
@@ -38,5 +36,6 @@ RUN cd /appdownload \
    && ln -s /appdownload/cdhit/cd-hit-2d /app/cd-hit-2d
 
 ENV PATH /app:$PATH
-sRUN chmod 755 /app/*
+RUN chmod 755 /app/*
+
 
